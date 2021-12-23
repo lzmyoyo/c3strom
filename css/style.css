@@ -1,0 +1,187 @@
+html {
+
+}
+
+body {
+  /* Margin bottom by footer height */
+  background-color: #f2f2f2;
+}  
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+.clearfix:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/* 通用表格样式 */
+table
+{
+  text-align: center;
+}
+table thead th
+{
+  text-align: center;
+}
+table thead th
+{
+  border-bottom: none !important;
+}
+a{
+  /* text-decoration: none; */
+}
+a:hover
+{
+  text-decoration: none;
+}
+.fl 
+{
+    float: left;
+}
+ul
+{
+  list-style: none;
+}
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* 通用灰色字体 */
+.text-color
+{
+  color:#bbbbbb;
+}
+fieldset {
+  padding: .35em .625em .75em;
+  margin: 0 2px;
+  border: 1px solid silver;
+}
+
+legend {
+  padding: .5em;
+  border: 0;
+  width: auto;
+}
+/* 通用样式 */
+.explore
+{
+    background-color: #fd6a00;
+    color: white;
+    padding: .5rem 2rem .5rem 2rem;
+    border-radius: 25px;
+    font-size: 2rem;
+}
+/* 侧边导航样式 */
+.main  .left-meun
+{
+    position: absolute;
+    z-index: 888;
+    bottom: 0;
+    left: 10%;
+    width: 5% !important;
+}
+.main .left-meun li
+{
+    font-size: .5rem;
+    writing-mode:vertical-lr;
+    margin-top: 1.5rem;
+}
+.main .left-meun li a
+{
+  display: block;
+    color: #8d8d8d;
+    font-size: .5rem;
+}
+.main .left-meun .active a
+{
+    color: black;
+}
+.main .left-meun li:last-child div
+{
+    width: .25rem;
+    height: 4rem;
+    margin-left: .5rem;
+    background-color: #ff6b00;
+}
+
+.hide
+{
+  display: none;
+}
+
+.show
+{
+  display: block;
+}
+
+.text
+{
+  overflow:hidden;  
+  text-overflow:ellipsis; 
+  white-space:nowrap;
+}
+
+/* 栏目高度 */
+/* .floor
+{
+  height: calc(100vh);
+  position: relative;
+}
+.floor .content
+{
+  position: absolute;
+  top: 20%;
+} */
+/* 文字飞入 */
+.module {
+  position: relative;
+}
+.module:nth-child(even) {
+  margin-right: 0;
+}
+.come-in {
+  transform: translateX(-150px);
+  animation: come-in 0.5s cubic-bezier(0, -0.01, 0, 0.99) forwards;
+}
+.come-in:nth-child(odd) {
+  animation-delay: 0.1s;
+  animation-duration: 0.75s;
+}
+.leave {
+  transform: translateX(150px);
+  animation: leave 0.5s cubic-bezier(0, -0.01, 0, 0.99) forwards;
+}
+.leave:nth-child(odd) {
+  animation-delay: 0.1s;
+  animation-duration: 0.75s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+  opacity: 1;
+}
+@keyframes come-in {
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes leave {
+  to {
+      transform: translateX(-150);
+      opacity: 0;
+  }
+}
