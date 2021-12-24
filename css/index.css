@@ -654,7 +654,7 @@
     border-radius: 50%;
     float: right;
     margin-left: 1rem;
-    border: 1px solid #a2a2a2;
+    /* border: 1px solid #a2a2a2; */
 }
 .main .intrdoce-one .img-banner .swiper .info .one-info ul li div
 {
@@ -666,7 +666,7 @@
 }
 .main .intrdoce-one .img-banner .swiper .info .one-info ul .active
 {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 .main .intrdoce-one .img-banner .swiper .info .one-info ul .active .center
 {
@@ -702,7 +702,7 @@
 {
     position: absolute;
     left: 45%;
-    top: 45%;
+    top: 40%;
     cursor: pointer;
 }
 /* 信息框 */
@@ -1193,16 +1193,18 @@
 {
     width: 28%;
     float: left;
-    /* border: 1px solid red; */
+    position: relative;
 }
 .main .footer .top .content ul li img
 {
-    width: 6rem;
+    width: 4rem;
     float: left;
 }
 .main .footer .top .content ul li h3
 {
-    float: left;
+    position: absolute;
+    top: -.5rem;
+    left: 4rem;
     margin-left: 1rem;
     color: #d6d6d6;
     font-size: 2rem;
@@ -1346,8 +1348,8 @@
 }
 .main .footer .center .content ul:last-child .email img
 {
-    width: 5rem;
-    height: 3.5rem;
+    width: 4rem;
+    /* height: 3.5rem; */
 }
 /* 底部 */
 .main .footer .down 
