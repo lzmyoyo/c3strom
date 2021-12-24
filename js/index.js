@@ -1,3 +1,6 @@
+ 
+ var swiper5;
+ var swiper6;
  //字体自适应
  function autoFontSize()
  {
@@ -54,7 +57,7 @@
                          slide.transform('');//清除样式
                          if(parseInt(progress)==-2)
                          {
-                             slide.transform('scale(1.2)');  
+                             slide.transform('scale(1.22)');  
                              slide.css({'-webkit-transition': 'all 1s linear',
                                        '-moz-transition': 'all 1s linear',
                                        '-o-transition': 'all 1s linear',
@@ -103,26 +106,18 @@
             });
 
         //车子左
-        var swiper5 = new Swiper(".car-left-swiper", 
+        swiper5 = new Swiper(".car-left-swiper", 
             {
             loop: !0,
             slidesOffsetBefore: 0,
-            parallax: !0,
-            navigation: {
-                nextEl: ".car-left-pre",
-                prevEl: ".car-left-next"
-                }
+            parallax: !0
             });
         //车子右 car-right-swiper
-        var swiper6 = new Swiper(".car-right-swiper", 
+        swiper6 = new Swiper(".car-right-swiper", 
             {
             loop: !0,
             slidesOffsetBefore: 0,
-            parallax: !0,
-            navigation: {
-                nextEl: ".car-right-pre",
-                prevEl: ".car-right-next"
-                }
+            parallax: !0
             });
         //全屏字体自适应
         autoFontSize()
